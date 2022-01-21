@@ -2,6 +2,9 @@ import AddReactionIcon from "@mui/icons-material/AddReaction";
 import SendIcon from "@mui/icons-material/Send";
 import { Button, Container, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+
+
+
 // const useStyles = makeStyles({}) // create custom style by using this hooks
 const useStyles = makeStyles({
   root: {
@@ -13,7 +16,15 @@ const useStyles = makeStyles({
     height: 48,
     padding: "0 30px",
     "&:hover": {
-      background: "blue",
+      // to use custom background color in btn, either we have to use inline style or gradient  color. 
+      backgroundColor: 'blue',
+      fontSize:'30px'
+      
+
+
+
+      
+     
     },
   },
   title: {
@@ -53,7 +64,7 @@ export default function Create() {
 
       {/* Custom hooks(makeStyles) provided by mui */}
       <Button className={classes.root}>
-        {" "}
+        
         Custom styles with mui hooks api
       </Button>
 
